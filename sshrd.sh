@@ -100,7 +100,17 @@ echo "[*] Getting device info and pwning... this may take a second"
 check=$("$oscheck"/irecovery -q | grep CPID | sed 's/CPID: //')
 replace=$("$oscheck"/irecovery -q | grep MODEL | sed 's/MODEL: //')
 deviceid=$("$oscheck"/irecovery -q | grep PRODUCT | sed 's/PRODUCT: //')
-ipswurl=$(curl -sL "https://api.ipsw.me/v4/device/$deviceid?type=ipsw" | "$oscheck"/jq '.firmwares | .[] | select(.version=="'$1'")' | "$oscheck"/jq -s '.[0] | .url' --raw-output)
+
+uiptipswurl="$1"
+
+
+case "$uiptipswurl" in ('https://'*)
+  ipswurl=$uiptipswurl
+  echo $ipswurl
+;;(*)
+  ipswurl=$(curl -sL "https://api.ipsw.me/v4/device/$deviceid?type=ipsw" | jq '.firmwares | .[] | select(.version=="'$1'")' | jq -s '.[0] | .url' --raw-output)
+  echo $ipswurl
+;;esac
 
 if [ -e work ]; then
     rm -rf work
@@ -374,3 +384,4 @@ echo "[*] Finished! Please use ./sshrd.sh boot to boot your device"
 echo $1 > sshramdisk/version.txt
 
 # } | tee "$(date +%T)"-"$(date +%F)"-"$(uname)"-"$(uname -r)".log
+
