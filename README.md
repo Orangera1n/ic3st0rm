@@ -1,10 +1,10 @@
 <h1 align="center">SSH Ramdisk Script</h1>
 <p align="center">
-  <a href="https://github.com/verygenericname/ic3st0rm_Script/graphs/contributors" target="_blank">
-    <img src="https://img.shields.io/github/contributors/verygenericname/ic3st0rm_Script.svg" alt="Contributors">
+  <a href="https://github.com/verygenericname/ic3st0rm/graphs/contributors" target="_blank">
+    <img src="https://img.shields.io/github/contributors/verygenericname/ic3st0rm.svg" alt="Contributors">
   </a>
-  <a href="https://github.com/verygenericname/ic3st0rm_Script/commits/main" target="_blank">
-    <img src="https://img.shields.io/github/commit-activity/w/verygenericname/ic3st0rm_Script.svg" alt="Commits">
+  <a href="https://github.com/verygenericname/ic3st0rm/commits/main" target="_blank">
+    <img src="https://img.shields.io/github/commit-activity/w/verygenericname/ic3st0rm.svg" alt="Commits">
   </a>
 </p>
 
@@ -21,8 +21,8 @@ Create and boot a SSH ramdisk on checkm8 devices
 
 # Usage
 
-1. Clone and cd into this repository: `git clone https://github.com/Orangera1n/ic3st0rm --recursive && cd ic3st0rm_Script`
-    - If you have cloned this before, run `cd ic3st0rm_Script && git pull` to pull new changes
+1. Clone and cd into this repository: `git clone https://github.com/Orangera1n/ic3st0rm --recursive && cd ic3st0rm`
+    - If you have cloned this before, run `cd ic3st0rm && git pull` to pull new changes
 2. Run `./ic3st0rm.sh <iOS version for ramdisk>`, **without** the `<>`.
     - The iOS version doesn't have to be the version you're currently on, but it should be close enough, and SEP has to be compatible
     - If you're on Linux, you will not be able to make a ramdisk for 16.1+, please use something lower instead, like 16.0
