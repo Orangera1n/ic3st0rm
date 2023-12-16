@@ -1,10 +1,10 @@
 <h1 align="center">SSH Ramdisk Script</h1>
 <p align="center">
-  <a href="https://github.com/verygenericname/ic3st0rm/graphs/contributors" target="_blank">
-    <img src="https://img.shields.io/github/contributors/verygenericname/ic3st0rm.svg" alt="Contributors">
+  <a href="https://github.com/Orangera1n/ic3st0rm/graphs/contributors" target="_blank">
+    <img src="https://img.shields.io/github/contributors/Orangera1n/ic3st0rm.svg" alt="Contributors">
   </a>
-  <a href="https://github.com/verygenericname/ic3st0rm/commits/main" target="_blank">
-    <img src="https://img.shields.io/github/commit-activity/w/verygenericname/ic3st0rm.svg" alt="Commits">
+  <a href="https://github.com/Orangera1n/ic3st0rm/commits/main" target="_blank">
+    <img src="https://img.shields.io/github/commit-activity/w/Orangera1n/ic3st0rm.svg" alt="Commits">
   </a>
 </p>
 
@@ -61,5 +61,5 @@ sudo usbmuxd -p -f
 - [Cryptic](https://github.com/Cryptiiiic) for iBoot64Patcher fork
 - [opa334](https://github.com/opa334) for TrollStore
 - [Nebula](https://github.com/itsnebulalol) for a bunch of QOL fixes to this script
-- [OpenAI](https://chat.openai.com/chat) for converting [kerneldiff](https://github.com/mcg29/kerneldiff) into [C](https://github.com/verygenericname/kerneldiff_C)
+- [OpenAI](https://chat.openai.com/chat) for converting [kerneldiff](https://github.com/mcg29/kerneldiff) into [C](https://github.com/Orangera1n/kerneldiff_C)
 - [Ploosh](https://github.com/plooshi) for KPlooshFinder
